@@ -1,6 +1,7 @@
 package com.example.chxbinapp;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
@@ -42,16 +43,8 @@ public class MainActivity extends Activity {
         controller.onStart();
 
 
-
-
-
-        recyclerView.setHasFixedSize(true);
-
-        layoutManager = new LinearLayoutManager(this);
-        recyclerView.setLayoutManager(layoutManager);
         final List<AllSport> input = new ArrayList<>();
 
-        mAdapter = new MyAdapter(input);
         recyclerView.setAdapter(mAdapter);
         ItemTouchHelper.SimpleCallback simpleItemTouchCallback =
                 new ItemTouchHelper.SimpleCallback(0, ItemTouchHelper.LEFT | ItemTouchHelper.RIGHT) {
@@ -80,7 +73,13 @@ public class MainActivity extends Activity {
         recyclerView.setHasFixedSize(true);
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
-        mAdapter = new MyAdapter(input);
+        mAdapter = new MyAdapter(input, new MyAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(AllSport item) {
+                Intent intent = new Intent(MainActivity.this, Description.class);
+                MainActivity.this.startActivity(intent);
+            }
+        });
         recyclerView.setAdapter(mAdapter);
     }
 }
