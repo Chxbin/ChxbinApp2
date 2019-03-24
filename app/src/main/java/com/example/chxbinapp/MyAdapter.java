@@ -67,6 +67,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
         final AllSport currentAll = values.get(position);
         final String name = currentAll.getStrSport();
+        final int obs = currentAll.getIdSport();
         holder.txtHeader.setText(name);
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override public void onClick(View v) {
@@ -74,7 +75,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
             }
         });
 
-        holder.txtFooter.setText("Footer: " + name);
+        holder.txtFooter.setText("Id: " + obs);
     }
 
     @Override
