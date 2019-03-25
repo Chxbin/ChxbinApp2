@@ -2,7 +2,7 @@
 
 # Présentation
 
-Simple projet démontrant l'utilisation d'une architecture, dans une application android codé en java.
+Simple projet démontrant l'utilisation d'une architecture, dans une application android.
 
 Cette application affiche tous les plus grand sports avec l'utilisation d'une API.
 
