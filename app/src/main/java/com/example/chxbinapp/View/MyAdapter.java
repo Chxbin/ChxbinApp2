@@ -1,4 +1,4 @@
-package com.example.chxbinapp;
+package com.example.chxbinapp.View;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -6,7 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.example.chxbinapp.Mod.AllSport;
+import com.example.chxbinapp.Model.AllSport;
+import com.example.chxbinapp.R;
 
 import java.util.List;
 
@@ -67,6 +68,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
         final AllSport currentAll = values.get(position);
         final String name = currentAll.getStrSport();
+
         final int obs = currentAll.getIdSport();
         holder.txtHeader.setText(name);
         holder.itemView.setOnClickListener(new View.OnClickListener() {

@@ -1,4 +1,4 @@
-package com.example.chxbinapp;
+package com.example.chxbinapp.View;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -8,7 +8,9 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.helper.ItemTouchHelper;
 
-import com.example.chxbinapp.Mod.AllSport;
+import com.example.chxbinapp.Controller.MainController;
+import com.example.chxbinapp.Model.AllSport;
+import com.example.chxbinapp.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -77,6 +79,8 @@ public class MainActivity extends Activity {
             @Override
             public void onItemClick(AllSport item) {
                 Intent intent = new Intent(MainActivity.this, Description.class);
+                intent.putExtra("nom",item.getStrSport());
+                intent.putExtra("description", item.getStrSportDescription());
                 MainActivity.this.startActivity(intent);
             }
         });

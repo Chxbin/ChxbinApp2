@@ -1,4 +1,4 @@
-package com.example.chxbinapp.Mod;
+package com.example.chxbinapp.Model;
 
 public class AllSport {
         private int idSport;

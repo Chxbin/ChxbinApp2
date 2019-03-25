@@ -1,8 +1,10 @@
-package com.example.chxbinapp;
+package com.example.chxbinapp.View;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+
+import com.example.chxbinapp.R;
 
 public class SplashScreen extends Activity {
 

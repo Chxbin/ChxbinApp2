@@ -1,6 +1,6 @@
-package com.example.chxbinapp;
+package com.example.chxbinapp.Controller;
 
-import com.example.chxbinapp.Mod.RestSports;
+import com.example.chxbinapp.Model.RestSports;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

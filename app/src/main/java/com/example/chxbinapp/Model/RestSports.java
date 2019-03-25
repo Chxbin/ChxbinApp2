@@ -1,4 +1,4 @@
-package com.example.chxbinapp.Mod;
+package com.example.chxbinapp.Model;
 import java.util.List;
 
 public class RestSports {
