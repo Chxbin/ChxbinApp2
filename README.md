@@ -11,15 +11,17 @@ Cette application affiche tous les plus grand sports avec l'utilisation d'une AP
         - Appel WebService à une API Rest.
         - Affichage d'une liste dans un RecyclerView
         - Fonctions supplémentaires :
-            * SwipeRefresh
             * Architecture ( MVC ou MVP ou MVVM )
             * Gitflow
+            * SwipeRefresh
+
             
 # Fonctionnalités:
 # Premier écran
 
 Splash affichant un résumer des principaux sports présent dans cette application.
 
+![image](https://user-images.githubusercontent.com/46956121/54956824-4a5c0280-4f51-11e9-9ceb-4326aa36f10c.png)
 
 
 # Deuxième écran
