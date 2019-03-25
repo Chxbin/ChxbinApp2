@@ -4,6 +4,7 @@ import android.util.Log;
 
 import com.example.chxbinapp.Model.AllSport;
 import com.example.chxbinapp.Model.RestSports;
+import com.example.chxbinapp.Model.RestSportsApi;
 import com.example.chxbinapp.View.MainActivity;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;

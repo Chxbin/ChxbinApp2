@@ -10,8 +10,6 @@ import com.example.chxbinapp.R;
 public class Description extends Activity {
 
 
-    private TextView txt;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

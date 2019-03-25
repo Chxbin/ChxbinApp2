@@ -53,12 +53,12 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent,
                                                    int viewType) {
-        // create a new view
+
         LayoutInflater inflater = LayoutInflater.from(
                 parent.getContext());
         View v =
                 inflater.inflate(R.layout.row_layout, parent, false);
-        // set the view's size, margins, paddings and layout parameters
+
         ViewHolder vh = new ViewHolder(v);
         return vh;
     }
