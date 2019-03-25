@@ -22,10 +22,13 @@ Splash affichant un résumer des principaux sports présent dans cette applicati
 
 
 
-# Premier écran
+# Deuxième écran
 
 Affiche la liste des sports
 
-# Deuxième écran
+![image](https://user-images.githubusercontent.com/46956121/54956562-8c387900-4f50-11e9-8826-fc4d4a07028b.png)
+
+
+# Troisième écran
 
 Affiche un descriptif des différents sports(en anglais)
